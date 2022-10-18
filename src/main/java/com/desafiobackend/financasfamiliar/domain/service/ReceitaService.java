@@ -16,4 +16,8 @@ public class ReceitaService {
     public List<Receita> listaTodasReceitas(){
         return receitaRepository.findAll();
     }
+
+    public Receita salvarReceita(Receita receita){
+        return receitaRepository.save(receita);
+    }
 }

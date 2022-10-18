@@ -12,7 +12,7 @@ public class Despesa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String Descricao;
+    private String descricao;
     private BigDecimal valor;
     private LocalDate data;
 
@@ -25,11 +25,11 @@ public class Despesa {
     }
 
     public String getDescricao() {
-        return Descricao;
+        return descricao;
     }
 
     public void setDescricao(String descricao) {
-        Descricao = descricao;
+        descricao = descricao;
     }
 
     public BigDecimal getValor() {
